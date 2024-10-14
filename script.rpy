@@ -3,6 +3,8 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
+
+
 define pov = Character("[povname]")
 define e = Character("Eileen")
 define l = Character("Lorenzo")
@@ -80,6 +82,32 @@ label lorenzochoice1B:
 
 label classbegin:
 
-    "Test"
+    "The teacher gets started punctually and begins discussing the chapter you read last night."
 
+    mf "And so let's discuss the main conflict of the chapter you all should've read last night - Alex, can you tell me why Juliet said 'O Wormeo wormeo, wherefore art thou Wormeo' and what she meant by that?"
+
+    a "Of course Ms. Fennec. Juliet was expressing her sorrow over the Wormeo family name. The Montagues and Capulets were feuding, so their love was forbidden. Truly, there is no greater melancholy than love that cannot be..."
+
+    mf "Excellent work, Alex. The teacher continues to ramble on."
+
+    "The student that answered that was Alex, the earthworm. He's always been the poetic and mysterious type, and you don't know him all that well."
+
+    "As some time passes, the bell rings and indicates that it’s time for your favorite part of the day – lunch!"
+
+    "You are sitting at a table by yourself enjoying the meal of the day, pizza, when a colorful and spicy hammerhead worm approaches you."
+
+    t "What’s up dweeb, sitting all by yourself?"
+
+    "This worm’s name was Tammy, and she was... abrasive, to say the least."
+
+    t "You look lonely, so I’m gonna sit next to you, ‘kay?"
+
+    menu:
+        "Get lost.":
+            jump tammychoice1A
+
+        "Okay...":
+            jump tammychoice1B
+
+label 
     return
