@@ -142,10 +142,7 @@ label afterlunchchoice:
 
         "Lorenzo":
             jump lorenzoplans
-
-label alexplans:
-
-
+            
 label tammyplans:
     "Hey dweeb, let’s go shopping at the mall. I’m not asking."
     menu:
@@ -193,7 +190,11 @@ label alexacceptance:
 label alexdenial: 
     "That’s alright, everything is brief and unimportant in the grand scheme of the universe."
     jump afterlunchchoice
-    
+
 label cafestart:
+
+label mallstart:
+
+label librarystart:
 
     return
