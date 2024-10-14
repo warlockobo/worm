@@ -147,14 +147,53 @@ label alexplans:
 
 
 label tammyplans:
+    "Hey dweeb, let’s go shopping at the mall. I’m not asking."
+    menu:
+        "If you insist.":
+            jump tammyacceptance
+        "Let me think about it.":
+            jump tammydenial
 
+label tammyacceptance:
+    t "Carry my bag, please and thank you."
+    "Tammy hands you her bag and walks off"
+    jump mallstart
+
+label tammydenial:
+    t "Ugh, whatever."
+    jump afterlunchchoice
 
 label lorenzoplans:
     "Bienvenido [povname]! I’m going to head to the cafe for some coffee and relaxation, wanna come?"
     menu:
         "Sure, sounds fun.":
-            jump cafestart
+            jump lorenzoacceptance
         "No thanks.":
-            jump afterlunchchoice
+            jump lorenzodenial
+
+label lorenzodenial:
+    l "Ah.. perhaps some other time then, friend."
+    jump afterlunchchoice
+
+label lorenzoacceptance:
+    l "Fantastico! Let’s head there now, shall we?"
+    jump cafestart
+
+label alexplans:
+    "Oh, hey [povname], didn’t notice you there... I was about to go to the library to ponder life’s greatest mysteries... care to join me?"
+    menu:
+        "That sounds fun.":
+            jump alexacceptance
+        "Not right now.":
+            jump alexdenial
+label alexacceptance:
+    "Cool, I’m curious to probe your mind."
+    jump librarystart
+
+label alexdenial: 
+    "That’s alright, everything is brief and unimportant in the grand scheme of the universe."
+    jump afterlunchchoice
+    
+label cafestart:
 
     return
