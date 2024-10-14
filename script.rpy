@@ -132,6 +132,7 @@ label afterlunch:
 
     "Who do you approach?"
 
+label afterlunchchoice:
     menu:
         "Alex":
             jump alexplans
@@ -143,12 +144,17 @@ label afterlunch:
             jump lorenzoplans
 
 label alexplans:
-    
+
 
 label tammyplans:
 
 
 label lorenzoplans:
-
+    "Bienvenido [povname]! I’m going to head to the cafe for some coffee and relaxation, wanna come?"
+    menu:
+        "Sure, sounds fun.":
+            jump cafestart
+        "No thanks.":
+            jump afterlunchchoice
 
     return
