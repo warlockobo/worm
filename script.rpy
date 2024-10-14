@@ -109,5 +109,13 @@ label classbegin:
         "Okay...":
             jump tammychoice1B
 
-label 
+label tammychoice1A:
+    t "Figures, don’t come crying to me when you have no friends."
+    "You enjoy the rest of your lunch alone in peaceful solitude."
+
+    jump afterlunch
+
+label tammychoice1B:
+    t "O-oh, I didn’t think you’d actually say yes... it’s not like I enjoy hanging out with you or anything... idiot."
+    "You enjoy the rest of your lunch in the company of Tammy."
     return
