@@ -75,6 +75,7 @@ label lorenzochoice1A:
     jump classbegin
 
 label lorenzochoice1B:
+
     l "Oh... alright, I thought we were cool like that..."
     "Lorenzo takes a seat a moderate distance away, looking sorely disappointed"
 
@@ -110,12 +111,44 @@ label classbegin:
             jump tammychoice1B
 
 label tammychoice1A:
+
     t "Figures, don’t come crying to me when you have no friends."
     "You enjoy the rest of your lunch alone in peaceful solitude."
 
     jump afterlunch
 
 label tammychoice1B:
+
     t "O-oh, I didn’t think you’d actually say yes... it’s not like I enjoy hanging out with you or anything... idiot."
     "You enjoy the rest of your lunch in the company of Tammy."
+
+    jump afterlunch
+
+label afterlunch:
+
+    "Lunch ends and the students make their way back to class. Nothing eventful happens as the day passes on, and eventually school is let out."
+
+    "The rest of the students are talking in groups about plans for the weekend, but you notice three worms hoping to catch your gaze."
+
+    "Who do you approach?"
+
+    menu:
+        "Alex":
+            jump alexplans
+
+        "Tammy":
+            jump tammyplans
+
+        "Lorenzo":
+            jump lorenzoplans
+
+label alexplans:
+    
+
+label tammyplans:
+
+
+label lorenzoplans:
+
+
     return
