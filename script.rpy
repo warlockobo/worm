@@ -142,7 +142,7 @@ label afterlunchchoice:
 
         "Lorenzo":
             jump lorenzoplans
-            
+
 label tammyplans:
     "Hey dweeb, let’s go shopping at the mall. I’m not asking."
     menu:
@@ -194,6 +194,31 @@ label alexdenial:
 label cafestart:
 
 label mallstart:
+    t "Ugh, shopping has got to be one of my favorite things in life. Retail therapy, you know?"
+    t "I wish I had a guy that would pay for everything... I guess you’ll have to do for today."
+    t "Okay [povname], be honest, how does this look?"
+
+    menu:
+        "You look delicious.":
+            jump tammychoice2A
+        "You look like a worm in a dress.":
+            jump tammychoice2B
+label tammychoice2A:
+    "*Tammy blushes*"
+
+    t "[povname], you idiot! You’re not supposed to be so bold!"
+
+    "Tammy timidly continues walking to the next shop, hoping that you’ll follow her."
+
+    jump mallmid
+label tammychoice2B:
+    t "A WORM??? YOU’VE SAID A LOT OF STUPID THINGS [NAME], BUT THAT REALLY TAKES THE CAKE."
+
+    "Tammy storms off in a huff but looks over her shoulder, expecting you to still follow her."
+
+    jump mallmid
+label mallmid:
+    
 
 label librarystart:
 
