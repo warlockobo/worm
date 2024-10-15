@@ -192,7 +192,46 @@ label alexdenial:
     jump afterlunchchoice
 
 label cafestart:
+    "The cafe is dimly lit and smells of roasted coffee. There’s quiet chatter muffled by a smooth jazz track."
 
+    "You and Lorenzo take a seat at a table. He orders a coffee and a biscotti, and gazes longingly at your lips."
+
+    l "It’s been too long since we’ve hung out like this, mio amico."
+
+    "Lorenzo puts his chin on his hands and looks at you."
+
+    l "The biscotti is taking so long, and I am famished..."
+
+    l "[povname], would you mind if I... had a bite of you? Like when we were kids?"
+
+    menu:
+        "That wouldn't hurt too bad, I guess...":
+            jump lorenzochoice2A
+
+        "Absolutely not.":
+            jump lorenzochoice2B
+
+label lorenzochoice2A:
+    l "La ringazio molto, mio amore..."
+
+    "You feel a twinge of pain as Lorenzo digs his circular rows of teeth into your side, and he begins sucking your blood."
+
+    "The world begins to blur and the edges of your vision begin to darken. The jazz and the voices blend together in a cacophany of confusion, and you can’t stay upright any longer."
+
+    "You faint."
+
+    "You awaken to a sharp cutting jab in your side. The familiar smell of coffee and sound of the jazz floods back in to your senses."
+
+    "Lorenzo is staring at you with almost no concern in his eyes, almost like he is simply pleased that he got what he wanted."
+
+    jump cafemid
+
+label lorenzochoice2B:
+    l "Ah, my soul aches, but I understand. We are older now, and things aren’t the way they were back then."
+
+    l "Truthfully [povname], not having you around has left a mole-sized hole in my heart. The fun adventures we used to have, the time we spent, the blood I used to gorge... my life is meaningless without them"
+
+    jump cafemid
 label mallstart:
     t "Ugh, shopping has got to be one of my favorite things in life. Retail therapy, you know?"
     t "I wish I had a guy that would pay for everything... I guess you’ll have to do for today."
