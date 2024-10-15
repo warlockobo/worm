@@ -212,13 +212,27 @@ label tammychoice2A:
 
     jump mallmid
 label tammychoice2B:
-    t "A WORM??? YOU’VE SAID A LOT OF STUPID THINGS [NAME], BUT THAT REALLY TAKES THE CAKE."
+    t "A WORM??? YOU’VE SAID A LOT OF STUPID THINGS [povname], BUT THAT REALLY TAKES THE CAKE."
 
     "Tammy storms off in a huff but looks over her shoulder, expecting you to still follow her."
 
     jump mallmid
 label mallmid:
-    
+    "The shopping spree continues, with your bank account growing lighter by the second."
+
+    "Eventually, after your fashion expertise was questioned multiple times, you walk Tammy home."
+
+    "It’s a small and quaint place, not what’d you expect from her boisterous attitude."
+
+    t "This is my tunnel... it’s not much, but it’s home, y’know?"
+
+    t "Thanks for coming with me, [povname]. It’s not like you had anything better to do though."
+
+    t "Maybe next time we’ll buy you some clothes that make you look less like a dork, ‘kay?"
+
+    "Tammy wiggles into her tunnel and disappears."
+
+    jump day1end
 
 label librarystart:
 
