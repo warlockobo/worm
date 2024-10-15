@@ -232,6 +232,17 @@ label lorenzochoice2B:
     l "Truthfully [povname], not having you around has left a mole-sized hole in my heart. The fun adventures we used to have, the time we spent, the blood I used to gorge... my life is meaningless without them"
 
     jump cafemid
+
+label cafemid:
+    "The waitress brings Lorenzo his coffee and biscotti, and you both sit in awkward silence for the rest of the afternoon."
+    "As the mushrooms dim and the cafe clears out, Lorenzo speaks up."
+
+    l "What a wonderful time I had with you, we must do this more often! I have missed your presence. Until then, mio amico."
+
+    "Lorenzo slithers off into the night, fading from view until he disappears completely.."
+
+    jump day1end
+
 label mallstart:
     t "Ugh, shopping has got to be one of my favorite things in life. Retail therapy, you know?"
     t "I wish I had a guy that would pay for everything... I guess you’ll have to do for today."
@@ -275,4 +286,44 @@ label mallmid:
 
 label librarystart:
 
+    "The library is somewhat filled with book enthusiasts, students, and other scholars. There is a serene hum coming from and unknown source, and giant bookshelves collectively housing the greatest knowledge of our time"
+
+    a "I’ve always loved the vibes here. Quiet, peaceful, sophisticated... the perfect place for a couple of philosophers like us, right?"
+
+    a "There’s something different about you. I noticed it in class today. It’s almost like you’re above all of this. Controlled by something greater than any of us."\
+
+    a "I think that there’s more for us, [povname]. More than just living underground and going with our base instincts."
+
+    a "I know I’m just a worm, but does that mean I can’t aspire to great things? That I can’t have hopes and dreams far beyond the scope of any worm before me?"
+
+    a "I’m not content to just wriggle around in the dirt until I shrivel up and die. I want to experience everything this world has to offer, worm or not."
+
+    a "“What do you think, [povname]?"
+
+    menu:
+        "I think that you can be whatever you want to be, Alex. You’re a smart worm.":
+
+            a "Thanks [povname], I knew chatting with you was a good idea. You really understand."
+
+            jump librarymid
+        
+        "I think you're a worm.":
+
+            a "That’s okay if you don’t believe in me, [povname]. It just gives me more motivation to prove the world wrong."
+
+            jump librarymid
+
+label librarymid:
+
+    a "This is why I invited you out. I knew, at the least, that’d you be interesting to talk to. And you’re a great listener, has anyone ever told you that?"
+
+    a "Thanks for hearing me out, [povname]. I’ll see you around."
+
+    "With that, Alex crawls his way out of the library and worms into the unsuspecting night."
+
+    jump day1end
+
+label day1end:
+
+    
     return
