@@ -3,8 +3,6 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-
-
 define pov = Character("[povname]")
 define e = Character("Eileen")
 define l = Character("Lorenzo")
@@ -324,6 +322,73 @@ label librarymid:
     jump day1end
 
 label day1end:
+    "The mushrooms are barely visible, and it’s only due to your superior mole senses that you can find your way home in the dark. The nocturnal creatures are just waking up, and the spirits of the night are coming alive."
 
-    
-    return
+    "After a long day with more social interaction than you’ve had in the past several months, you find yourself completely exhausted."
+
+    "Your bed is warm and inviting, but your stomach roars, reminding you that you haven’t eaten since lunch..."
+
+    "Despite your hunger, you plop on to your bed and are awash with feelings of lethargy."
+
+    "Your eyelids weigh as elephants, and it’s not long before the sweet embrace of sleep takes you."
+
+    jump day2start
+
+label day2start:
+
+    "You’re rudely awoken by the shine of a mushroom through your window, constricting your pupils before you’ve had a chance to wipe the dust from your eyes."
+
+    "You were barely conscious when your ears were assaulted by a banging at your door."
+
+    "You clambered out of bed and open your front door where you are greeted by... a snail."
+
+    "Ah, the snail mail. This small fellow has three letters taped to his back, all addressed to you."
+
+    "You take the letters off of his shell and he begins squirming away without another word, leaving a trail of slime in his wake."
+
+    "You examine the letters and find them all addressed to you with different senders. Tammy, Lorenzo, and Alex."
+
+    jump letterchoice
+
+label letterchoice:
+    menu:
+        "Tammy":
+            jump tammyletter
+        "Lorenzo":
+            jump lorenzoletter
+        "Alex":
+            jump alexletter
+
+label tammyletter:
+    "Sup nerd. Thought you’d like to tone up with me at the gym today. See you there."
+
+    menu:
+        "Meet Tammy":
+            jump tammygym
+        "Read the other letters":
+            jump letterchoice
+
+label lorenzoletter:
+    "Ciao [povname]! Hanging out with you at the cafe was so nostalgic, I was wondering if you wanted to come over and play some video games, like old times? We could talk too."
+
+    menu:
+        "Meet Lorenzo":
+            jump lorenzohouse
+        "Read the other letters":
+            jump letterchoice
+
+label alexletter: 
+    "Dear [povname], I had an excellent time yesterday talking with you. I’d like to show you my favorite place to sit and think, if that’s cool with you? Meet me at Wormwood Park."
+
+    menu:
+        "Meet Alex":
+            jump alexpark
+        "Read the other letters":
+            jump letterchoice
+
+label alexpark:
+
+label tammygym:
+
+label lorenzohouse:
+
