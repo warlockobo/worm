@@ -387,7 +387,19 @@ label alexletter:
             jump letterchoice
 
 label alexpark:
-
+    "You go to the park and see Alex coiled on a bench, his pink worm skin glistening in the mushroomlight."
+    "Ah, [povname]! Excellent to see you. I was just enjoying some fresh air and nature. It truly is wonderful, isn’t it?"
+    "I want to show you to my favorite spot, perhaps we can have some more intellectual discussions there."
+    "Alex guides you through a winding path of rock and moss. There are twists and turns that would be difficult to navigate without repeated exposure."
+    "After some time, you and Alex come into a clearing with the most beautiful sight you’ve ever seen."
+    "There is a pond, with bright blue mushrooms illuminating the entire area, and luminescence reflecting off the water to create a mesmerizing ripple effect."
+    "I always come here to think and get away from the bustle of the city, and I thought I’d share it with you, my scholar in arms."
+    "The environment was amazing. You’d never experienced beauty like this. But there was one thing clawing at the back of your mind, making its way to the forefront of all of your thoughts."
+    "You were hungry. Ravenously hungry. And you needed to eat NOW."
+    "The only thing edible nearby was... a worm. You eat worms."
+    "Alex had his eyes on the scenery as you came from behind and grappled him into your mouth."
+    "His pleads and screams were cut short by the gnashing of your teeth."
+    "You had been satiated. And now, you could enjoy a nap in the most gorgeous place you’d ever been."
 
 label tammygym:
     t "O-oh, [povname]! I didn’t think you’d actually come- uhh I mean um I’m glad you came!"
