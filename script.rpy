@@ -388,7 +388,17 @@ label alexletter:
 
 label alexpark:
 
+
 label tammygym:
+    t "O-oh, [povname]! I didn’t think you’d actually come- uhh I mean um I’m glad you came!"
+    t "You showed up right on time, I was just about to start some arm exercises. You’re kinda scrawny in that area, but I think you’ve got potential."
+    "You sit down in the alien looking machine as Tammy sets the weight and positions your arms."
+    t "Alright [povname], just curl the bar here, and then let it down. You should feel it in your biceps."
+    "Tammy was being gentler than usual, with what seemed like a glint of admiration in her eyes."
+    "You managed to do a few reps on the machine before the fabled ‘burn’ set in"
+    t "That wasn’t bad at all for your first time!"
+
 
 label lorenzohouse:
+
 
