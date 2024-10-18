@@ -401,6 +401,8 @@ label alexpark:
     "His pleads and screams were cut short by the gnashing of your teeth."
     "You had been satiated. And now, you could enjoy a nap in the most gorgeous place you’d ever been."
 
+    return
+
 label tammygym:
     t "O-oh, [povname]! I didn’t think you’d actually come- uhh I mean um I’m glad you came!"
     t "You showed up right on time, I was just about to start some arm exercises. You’re kinda scrawny in that area, but I think you’ve got potential."
@@ -422,6 +424,8 @@ label tammygym:
     "Various other animals in the gym begin to rush to you – whether it was from the murder or your own weakness, you’re unsure."
     "Your vision fades to black and you remember."
     "Hammerhead worms are toxic."
+
+    return
 label lorenzohouse:
     "You arrive at Lorenzo’s house and knock on the door. You hear a bump and a curse from inside, but then the door is opened."
     l "Che figata! I did not fully expect you to arrive, but I am so glad you did."
@@ -443,3 +447,5 @@ label lorenzohouse:
     "You were shocked to be drained of energy so quickly, but then you remembered... you hadn’t eaten in quite a while."
     "You fell to your knees and your vision began to fade to black. Lorenzo showed no signs of stopping his feast."
     "The last thing you remembered as your face made contact with the floor was... Lorenzo is a leech."
+
+    return
