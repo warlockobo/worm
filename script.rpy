@@ -288,7 +288,7 @@ label librarystart:
 
     a "I’ve always loved the vibes here. Quiet, peaceful, sophisticated... the perfect place for a couple of philosophers like us, right?"
 
-    a "There’s something different about you. I noticed it in class today. It’s almost like you’re above all of this. Controlled by something greater than any of us."\
+    a "There’s something different about you. I noticed it in class today. It’s almost like you’re above all of this. Controlled by something greater than any of us."
 
     a "I think that there’s more for us, [povname]. More than just living underground and going with our base instincts."
 
