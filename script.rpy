@@ -518,24 +518,35 @@ label tammygym:
 
     return
 label lorenzohouse:
+    scene bg cave 4
     "You arrive at Lorenzo’s house and knock on the door. You hear a bump and a curse from inside, but then the door is opened."
+    show lorenzo blush with dissolve
     l "Che figata! I did not fully expect you to arrive, but I am so glad you did."
+    scene bg lorenzo bedroom with fade
+    show lorenzo plain with dissolve
     "Lorenzo gives you a small tour of his house, but not much has changed since you were last here many, many years ago."
     "Eventually you wind up in his room, adorned with several band posters, a computer, his bed, and a game console."
     "Lorenzo turns on the game console and you’re greeted by the title screen for Worm Kart 7."
     l "Mio amico, what say we have a little wager?"
+    show lorenzo blush
     l "If I beat you in Worm Kart, you let me suck your blood! If you win... you can have anything you’d like from my room."
     "The PC is worth a pretty penny, as is the game console, and you know yourself to be a bit of a Worm Kart savant..."
+    show lorenzo plain
     "Before you can give your answer, Lorenzo hands you a controller and sits next to you."
     "The matches were neck and neck with both of you gaining and losing the lead. Sometimes he’d win, sometimes it’d be you, until something strange started happening..."
     "His kart began speeding up. Faster than you know anything to be possible. Even in the fastest times on the internet, you’d never seen a kart move this fast."
     "Was Lorenzo... cheating?"
     "His lead began to get further and further ahead until eventually it was insurmountable. You had lost the deal."
+    show lorenzo hands
     l "I am sorry, mio amore, but a deal is a deal."
+    show lorenzo frenzy with vpunch
     "Before you could even react, Lorenzo was upon you."
     "He positioned himself behind your back, in a place you couldn’t reach with your hands, and began sucking your blood."
+    scene bg lorenzo bedroom daze with fade
+    show lorenzo frenzy
     "You could feel his teeth gnash and shred through your flesh, and your life essence began to flow out of the wound."
     "You were shocked to be drained of energy so quickly, but then you remembered... you hadn’t eaten in quite a while."
+    scene bg black with pixellate
     "You fell to your knees and your vision began to fade to black. Lorenzo showed no signs of stopping his feast."
     "The last thing you remembered as your face made contact with the floor was... Lorenzo is a leech."
 
