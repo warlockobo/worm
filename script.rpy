@@ -65,7 +65,6 @@ label lorenzochoice1A:
     l "Awesome! Thanks [povname], you're the best."
     "Lorenzo takes the seat next to yours and leans uncomfortably close over your shoulder to look at your book."
     
-    show side monty plain at left
     hide lorenzo blush with dissolve
     jump classbegin
 
