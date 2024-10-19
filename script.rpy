@@ -14,20 +14,13 @@ define mf = Character("Ms. Fennec")
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
+    #Shows a background
     scene bg monty bedroom
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
+    #This shows a character sprite
     show monty noglasses
 
-    # These display lines of dialogue.
-
+    #These display lines of dialogue.
     "The luminescent mushrooms shine through your window. Their glow is a common indicator that it's time to start the day."
 
     "Today is Friday, and you've got school. You live in the bustling city of Wormopolis, renowned for its academics and nightlife."
@@ -48,7 +41,6 @@ label start:
 label school:
 
     scene bg classroom
-    show side monty plain at left 
     "The classroom is alive with the chatter of your peers. You take your seat and bring out your book. As you're looking down, someone approaches you..."
 
     show lorenzo plain with dissolve
@@ -71,7 +63,6 @@ label lorenzochoice1A:
 
     show lorenzo blush
     l "Awesome! Thanks [povname], you're the best."
-    show side monty nervous at left
     "Lorenzo takes the seat next to yours and leans uncomfortably close over your shoulder to look at your book."
     
     show side monty plain at left
@@ -277,7 +268,7 @@ label lorenzochoice2B:
 
 label cafemid:
     scene bg cafe with fade
-    show lorezo plain
+    show lorenzo plain
     "The waitress brings Lorenzo his coffee and biscotti, and you both sit in awkward silence for the rest of the afternoon."
     "As the mushrooms dim and the cafe clears out, Lorenzo speaks up."
 
@@ -473,41 +464,55 @@ label alexletter:
             jump letterchoice
 
 label alexpark:
+    scene bg cave 1
     "You go to the park and see Alex coiled on a bench, his pink worm skin glistening in the mushroomlight."
-    "Ah, [povname]! Excellent to see you. I was just enjoying some fresh air and nature. It truly is wonderful, isn’t it?"
-    "I want to show you to my favorite spot, perhaps we can have some more intellectual discussions there."
+    show alex plain
+    a "Ah, [povname]! Excellent to see you. I was just enjoying some fresh air and nature. It truly is wonderful, isn’t it?"
+    a "I want to show you to my favorite spot, perhaps we can have some more intellectual discussions there."
     "Alex guides you through a winding path of rock and moss. There are twists and turns that would be difficult to navigate without repeated exposure."
     "After some time, you and Alex come into a clearing with the most beautiful sight you’ve ever seen."
+    scene bg special place with fade
     "There is a pond, with bright blue mushrooms illuminating the entire area, and luminescence reflecting off the water to create a mesmerizing ripple effect."
-    "I always come here to think and get away from the bustle of the city, and I thought I’d share it with you, my scholar in arms."
+    show alex blush with dissolve
+    a "I always come here to think and get away from the bustle of the city, and I thought I’d share it with you, my scholar in arms."
     "The environment was amazing. You’d never experienced beauty like this. But there was one thing clawing at the back of your mind, making its way to the forefront of all of your thoughts."
     "You were hungry. Ravenously hungry. And you needed to eat NOW."
     "The only thing edible nearby was... a worm. You eat worms."
+    show alex betrayed with hpunch
     "Alex had his eyes on the scenery as you came from behind and grappled him into your mouth."
     "His pleads and screams were cut short by the gnashing of your teeth."
+    hide alex betrayed with pixellate
     "You had been satiated. And now, you could enjoy a nap in the most gorgeous place you’d ever been."
 
     return
 
 label tammygym:
+    scene bg gym
+    show tammy plain with dissolve
     t "O-oh, [povname]! I didn’t think you’d actually come- uhh I mean um I’m glad you came!"
     t "You showed up right on time, I was just about to start some arm exercises. You’re kinda scrawny in that area, but I think you’ve got potential."
     "You sit down in the alien looking machine as Tammy sets the weight and positions your arms."
+    show tammy gentle
     t "Alright [povname], just curl the bar here, and then let it down. You should feel it in your biceps."
     "Tammy was being gentler than usual, with what seemed like a glint of admiration in her eyes."
-    "You managed to do a few reps on the machine before the fabled ‘burn’ set in"
+    "You managed to do a few reps on the machine before the fabled ‘burn’ set in."
     t "That wasn’t bad at all for your first time!"
     "Tammy’s words sounded muffled, and along with that, the ambient noises of the gym began to fade. Only one sense remained in your entire body."
     "Your ravenous hunger."
     "You didn’t eat dinner last night, and you skipped breakfast because of all the mail."
     "You look at Tammy - the sudden kindness in her eyes - it means nothing to you."
     "Tammy is a worm. Moles eat worms."
+    show tammy betrayed with hpunch
     "You grab Tammy and shove her into your mouth without hesitation, so swiftly that there was no resistance."
     "Her screams and pleads are promptly cut short by the chomp of your jaw."
+    hide tammy betrayed with pixellate
     "At first there is complete silence... but then, you hear your blood rushing through your veins."
+    scene bg gym daze with hpunch
     "You cough and there’s... blood?"
-    "Your legs can’t support you anymore and give out. You fall to the floor with loud THUD"
+    scene bg gym daze with vpunch
+    "Your legs can’t support you anymore and give out. You fall to the floor with loud THUD."
     "Various other animals in the gym begin to rush to you – whether it was from the murder or your own weakness, you’re unsure."
+    scene bg black with fade
     "Your vision fades to black and you remember."
     "Hammerhead worms are toxic."
 
