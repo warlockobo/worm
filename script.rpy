@@ -14,6 +14,9 @@ define mf = Character("Ms. Fennec")
 
 label start:
 
+    # Plays BGM
+    play music "audio/BGM/day1_bgm.ogg" fadein 1 volume 0.05 loop
+
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
@@ -32,6 +35,8 @@ label start:
 
     "Today is Friday, and you've got school. You live in the bustling city of Wormopolis, renowned for its academics and nightlife."
     
+    play sound "audio/SoundFX/clothes.ogg" 
+
     "You get dressed and head to class at Sedimentary High School, which has the highest scores in the county."
 
     "Right before you leave, you remember something... you remember that you forgot your name!"
@@ -47,6 +52,8 @@ label school:
 
     scene bg school
     show monty neutral
+
+    play sound "audio/SoundFX/hallway.ogg"
 
     "The classroom is alive with the chatter of your peers. You take your seat and bring out your book. As you're looking down, someone approaches you..."
 
@@ -90,6 +97,8 @@ label classbegin:
     mf "Excellent work, Alex. The teacher continues to ramble on."
 
     "The student that answered that was Alex, the earthworm. He's always been the poetic and mysterious type, and you don't know him all that well."
+
+    play sound "audio/SoundFX/bell.ogg" 
 
     "As some time passes, the bell rings and indicates that it’s time for your favorite part of the day – lunch!"
 
@@ -190,6 +199,9 @@ label alexdenial:
     jump afterlunchchoice
 
 label cafestart:
+
+    play music "audio/BGM/cafe_bgm.ogg" volume 0.05 loop
+
     "The cafe is dimly lit and smells of roasted coffee. There’s quiet chatter muffled by a smooth jazz track."
 
     "You and Lorenzo take a seat at a table. He orders a coffee and a biscotti, and gazes longingly at your lips."
@@ -216,6 +228,8 @@ label lorenzochoice2A:
 
     "The world begins to blur and the edges of your vision begin to darken. The jazz and the voices blend together in a cacophany of confusion, and you can’t stay upright any longer."
 
+    play sound "audio/SoundFX/fall.ogg"
+
     "You faint."
 
     "You awaken to a sharp cutting jab in your side. The familiar smell of coffee and sound of the jazz floods back in to your senses."
@@ -237,11 +251,16 @@ label cafemid:
 
     l "What a wonderful time I had with you, we must do this more often! I have missed your presence. Until then, mio amico."
 
+    stop music fadeout 5
+
     "Lorenzo slithers off into the night, fading from view until he disappears completely.."
 
     jump day1end
 
 label mallstart:
+
+    play music "audio/BGM/mall.ogg" volume 0.15
+
     t "Ugh, shopping has got to be one of my favorite things in life. Retail therapy, you know?"
     t "I wish I had a guy that would pay for everything... I guess you’ll have to do for today."
     t "Okay [povname], be honest, how does this look?"
@@ -268,6 +287,8 @@ label tammychoice2B:
 label mallmid:
     "The shopping spree continues, with your bank account growing lighter by the second."
 
+    stop music fadeout 5 
+
     "Eventually, after your fashion expertise was questioned multiple times, you walk Tammy home."
 
     "It’s a small and quaint place, not what’d you expect from her boisterous attitude."
@@ -283,6 +304,8 @@ label mallmid:
     jump day1end
 
 label librarystart:
+
+    play music "audio/BGM/library_bgm.ogg" volume 2
 
     "The library is somewhat filled with book enthusiasts, students, and other scholars. There is a serene hum coming from and unknown source, and giant bookshelves collectively housing the greatest knowledge of our time"
 
@@ -317,7 +340,10 @@ label librarymid:
 
     a "Thanks for hearing me out, [povname]. I’ll see you around."
 
+    stop music fadeout 5
+
     "With that, Alex crawls his way out of the library and worms into the unsuspecting night."
+
 
     jump day1end
 
@@ -325,6 +351,8 @@ label day1end:
     "The mushrooms are barely visible, and it’s only due to your superior mole senses that you can find your way home in the dark. The nocturnal creatures are just waking up, and the spirits of the night are coming alive."
 
     "After a long day with more social interaction than you’ve had in the past several months, you find yourself completely exhausted."
+
+    play sound "audio/SoundFX/growl.ogg"
 
     "Your bed is warm and inviting, but your stomach roars, reminding you that you haven’t eaten since lunch..."
 
@@ -337,6 +365,8 @@ label day1end:
 label day2start:
 
     "You’re rudely awoken by the shine of a mushroom through your window, constricting your pupils before you’ve had a chance to wipe the dust from your eyes."
+
+    play sound "audio/SoundFX/angry_knock.ogg"
 
     "You were barely conscious when your ears were assaulted by a banging at your door."
 
@@ -387,6 +417,9 @@ label alexletter:
             jump letterchoice
 
 label alexpark:
+
+    play music "audio/BGM/alex_date.ogg" volume 0.10 fadein 2
+
     "You go to the park and see Alex coiled on a bench, his pink worm skin glistening in the mushroomlight."
     "Ah, [povname]! Excellent to see you. I was just enjoying some fresh air and nature. It truly is wonderful, isn’t it?"
     "I want to show you to my favorite spot, perhaps we can have some more intellectual discussions there."
@@ -398,12 +431,18 @@ label alexpark:
     "You were hungry. Ravenously hungry. And you needed to eat NOW."
     "The only thing edible nearby was... a worm. You eat worms."
     "Alex had his eyes on the scenery as you came from behind and grappled him into your mouth."
+
+    play sound "audio/SoundFX/chewing.ogg" 
+
     "His pleads and screams were cut short by the gnashing of your teeth."
     "You had been satiated. And now, you could enjoy a nap in the most gorgeous place you’d ever been."
 
     return
 
 label tammygym:
+
+    play music "audio/BGM/gym.ogg" fadein 1 
+
     t "O-oh, [povname]! I didn’t think you’d actually come- uhh I mean um I’m glad you came!"
     t "You showed up right on time, I was just about to start some arm exercises. You’re kinda scrawny in that area, but I think you’ve got potential."
     "You sit down in the alien looking machine as Tammy sets the weight and positions your arms."
@@ -411,15 +450,28 @@ label tammygym:
     "Tammy was being gentler than usual, with what seemed like a glint of admiration in her eyes."
     "You managed to do a few reps on the machine before the fabled ‘burn’ set in"
     t "That wasn’t bad at all for your first time!"
+    
+    stop music fadeout 3
+
+    "Suddenly..."
+
+    play music "audio/BGM/bad_ending.ogg" fadein 2
+
     "Tammy’s words sounded muffled, and along with that, the ambient noises of the gym began to fade. Only one sense remained in your entire body."
     "Your ravenous hunger."
     "You didn’t eat dinner last night, and you skipped breakfast because of all the mail."
     "You look at Tammy - the sudden kindness in her eyes - it means nothing to you."
     "Tammy is a worm. Moles eat worms."
+
+    play sound "audio/SoundFX/chewing.ogg"
+
     "You grab Tammy and shove her into your mouth without hesitation, so swiftly that there was no resistance."
     "Her screams and pleads are promptly cut short by the chomp of your jaw."
     "At first there is complete silence... but then, you hear your blood rushing through your veins."
     "You cough and there’s... blood?"
+
+    play sound "audio/SoundFX/fall.ogg"
+
     "Your legs can’t support you anymore and give out. You fall to the floor with loud THUD"
     "Various other animals in the gym begin to rush to you – whether it was from the murder or your own weakness, you’re unsure."
     "Your vision fades to black and you remember."
@@ -427,6 +479,9 @@ label tammygym:
 
     return
 label lorenzohouse:
+
+    play sound "audio/SoundFX/normal_knock.ogg"
+
     "You arrive at Lorenzo’s house and knock on the door. You hear a bump and a curse from inside, but then the door is opened."
     l "Che figata! I did not fully expect you to arrive, but I am so glad you did."
     "Lorenzo gives you a small tour of his house, but not much has changed since you were last here many, many years ago."
@@ -436,12 +491,18 @@ label lorenzohouse:
     l "If I beat you in Worm Kart, you let me suck your blood! If you win... you can have anything you’d like from my room."
     "The PC is worth a pretty penny, as is the game console, and you know yourself to be a bit of a Worm Kart savant..."
     "Before you can give your answer, Lorenzo hands you a controller and sits next to you."
+
+    play music "audio/BGM/bad_ending.ogg" fadein 2
+
     "The matches were neck and neck with both of you gaining and losing the lead. Sometimes he’d win, sometimes it’d be you, until something strange started happening..."
     "His kart began speeding up. Faster than you know anything to be possible. Even in the fastest times on the internet, you’d never seen a kart move this fast."
     "Was Lorenzo... cheating?"
     "His lead began to get further and further ahead until eventually it was insurmountable. You had lost the deal."
     l "I am sorry, mio amore, but a deal is a deal."
     "Before you could even react, Lorenzo was upon you."
+
+    play sound "audio/SoundFX/suck.ogg"
+
     "He positioned himself behind your back, in a place you couldn’t reach with your hands, and began sucking your blood."
     "You could feel his teeth gnash and shred through your flesh, and your life essence began to flow out of the wound."
     "You were shocked to be drained of energy so quickly, but then you remembered... you hadn’t eaten in quite a while."
