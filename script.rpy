@@ -21,7 +21,7 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    scene bg monty bedroom
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
@@ -52,7 +52,7 @@ label start:
 
 label school:
 
-    scene bg school
+    scene bg classroom
 
     play sound "audio/SoundFX/hallway.ogg"
 
@@ -231,6 +231,9 @@ label cafestart:
 
     play music "audio/BGM/cafe_bgm.ogg" volume 0.05 loop
 
+    scene bg cafe
+    show lorenzo plain with dissolve
+
     "The cafe is dimly lit and smells of roasted coffee. There’s quiet chatter muffled by a smooth jazz track."
 
     "You and Lorenzo take a seat at a table. He orders a coffee and a biscotti, and gazes longingly at your lips."
@@ -303,6 +306,9 @@ label mallstart:
 
     play music "audio/BGM/mall.ogg" volume 0.15
 
+    scene bg mall
+    show tammy plain with dissolve
+
     t "Ugh, shopping has got to be one of my favorite things in life. Retail therapy, you know?"
     t "I wish I had a guy that would pay for everything... I guess you’ll have to do for today."
     t "Okay [povname], be honest, how does this look?"
@@ -356,6 +362,8 @@ label mallmid:
 label librarystart:
 
     play music "audio/BGM/library_bgm.ogg" volume 2
+
+    scene bg library
 
     "The library is somewhat filled with book enthusiasts, students, and other scholars. There is a serene hum coming from and unknown source, and giant bookshelves collectively housing the greatest knowledge of our time"
 
@@ -415,6 +423,8 @@ label day1end:
     "The mushrooms are barely visible, and it’s only due to your superior mole senses that you can find your way home in the dark. The nocturnal creatures are just waking up, and the spirits of the night are coming alive."
 
     "After a long day with more social interaction than you’ve had in the past several months, you find yourself completely exhausted."
+
+    scene bg monty bedroom with fade
 
     play sound "audio/SoundFX/growl.ogg"
 
@@ -494,6 +504,8 @@ label alexpark:
 
     play music "audio/BGM/alex_date.ogg" volume 0.10 fadein 2
 
+    scene bg cave 1
+
     "You go to the park and see Alex coiled on a bench, his pink worm skin glistening in the mushroomlight."
     show alex plain
     a "Ah, [povname]! Excellent to see you. I was just enjoying some fresh air and nature. It truly is wonderful, isn’t it?"
@@ -522,6 +534,9 @@ label tammygym:
 
     play music "audio/BGM/gym.ogg" fadein 1 
 
+    scene bg gym
+    show tammy plain with dissolve
+
     t "O-oh, [povname]! I didn’t think you’d actually come- uhh I mean um I’m glad you came!"
     t "You showed up right on time, I was just about to start some arm exercises. You’re kinda scrawny in that area, but I think you’ve got potential."
     "You sit down in the alien looking machine as Tammy sets the weight and positions your arms."
@@ -543,6 +558,8 @@ label tammygym:
     "You look at Tammy - the sudden kindness in her eyes - it means nothing to you."
     "Tammy is a worm. Moles eat worms."
 
+    show tammy betrayed with hpunch
+
     play sound "audio/SoundFX/chewing.ogg"
 
     "You grab Tammy and shove her into your mouth without hesitation, so swiftly that there was no resistance."
@@ -554,6 +571,8 @@ label tammygym:
 
     play sound "audio/SoundFX/fall.ogg"
 
+    scene bg gym daze with vpunch
+
     "Your legs can’t support you anymore and give out. You fall to the floor with loud THUD"
     "Various other animals in the gym begin to rush to you – whether it was from the murder or your own weakness, you’re unsure."
     scene bg black with fade
@@ -564,6 +583,8 @@ label tammygym:
 label lorenzohouse:
 
     play sound "audio/SoundFX/normal_knock.ogg"
+
+    scene bg cave 4
 
     "You arrive at Lorenzo’s house and knock on the door. You hear a bump and a curse from inside, but then the door is opened."
     show lorenzo blush with dissolve
