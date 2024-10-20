@@ -81,7 +81,7 @@ define gui.label_text_size = 36
 define gui.notify_text_size = 24
 
 ## The size of the game's title.
-define gui.title_text_size = 75
+define gui.title_text_size = 36
 
 
 ## Main and Game Menus #########################################################
@@ -277,7 +277,7 @@ define gui.slot_spacing = 15
 
 ## The position of the main menu text.
 define gui.main_menu_text_xalign = 1.0
-
+define gui.main_menu_text_ypos = -20.0  #moves the title of the game on the main menu towards the top of the screen
 
 ## Frames ######################################################################
 ##
