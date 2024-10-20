@@ -54,8 +54,6 @@ label school:
 
     scene bg classroom
 
-    play sound "audio/SoundFX/hallway.ogg"
-
     "The classroom is alive with the chatter of your peers. You take your seat and bring out your book. As you're looking down, someone approaches you..."
 
     show lorenzo plain with dissolve
