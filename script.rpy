@@ -53,7 +53,6 @@ label start:
 label school:
 
     scene bg school
-    show monty neutral
 
     play sound "audio/SoundFX/hallway.ogg"
 
